@@ -1,0 +1,153 @@
+.section__uslugi {
+    
+
+    background-color: #fff;
+
+    padding: 120px 0px;
+
+    @media (max-width: 778px) {
+        padding: 60px 0px;
+    }
+
+}
+
+.uslugi{
+
+    display: flex !important;
+    align-items: center;
+    gap: 20px !important;
+    padding-top: 40px  !important;
+
+
+    &__title{
+        
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+
+       width: max-content;
+        color: rgb(19, 18, 18);
+        font-size: 42px;
+        font-weight: 700;
+        line-height: 50px;
+        text-align: left;
+        padding: 10px 0px;
+        border-bottom: 3px solid rgba(80, 61, 255, 0.674);
+
+        @media (max-width: 778px) {
+            font-size: 28px;
+            line-height: 33px;
+        }
+
+        @media (max-width: 550px) {
+            font-size: 22px;
+        }
+        
+    }
+    
+
+    
+    &__item{
+        max-width: 100%;
+        width: fit-content;
+        min-height: 350px;
+        padding: 20px;
+        border: 2px solid  rgba(80, 61, 255, 0.674);
+        border-radius: 30px;
+        margin-right: 20px !important;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+        transition: all ease .2s;
+        cursor: pointer;
+
+
+        @media (max-width: 1350px) {
+            // flex: 0 1 48%;
+            min-height: 380px;
+        }
+
+        @media (max-width: 900px) {
+            // flex: 0 1 48%;
+            min-height: 400px;
+        }
+
+
+
+        &__icon{
+            width: 40px;
+        }
+
+        &__title{
+            
+            color: rgb(19, 18, 18);
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 26px;
+            padding: 15px 0px;
+
+            transition: all ease .2s;
+
+
+            @media (max-width: 550px) {
+                font-size: 20px;
+                line-height: 22px;
+            }
+        }
+
+        &__subtitle{
+            
+            color: rgb(19, 18, 18);
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 25px;
+
+            @media (max-width: 900px) {
+                font-size: 17px;
+            }
+
+
+            @media (max-width: 550px) {
+                font-size: 16px;
+                line-height: 22px;
+            }
+            
+
+        }
+
+        &__titleTwo{
+            
+            color: rgb(19, 18, 18);
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 26px;
+            padding: 15px 0px;
+
+            transition: all ease .2s;
+
+
+            @media (max-width: 550px) {
+                font-size: 20px;
+                line-height: 22px;
+            }
+        }
+
+        &__subtitleTwo{
+            
+            color: rgb(19, 18, 18);
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 25px;
+
+            @media (max-width: 550px) {
+                font-size: 16px;
+                line-height: 22px;
+            }
+
+        }
+        
+    }
+
+}

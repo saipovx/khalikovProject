@@ -1,0 +1,193 @@
+
+
+.header{
+    padding: 40px 0px;
+    background: #00000000;
+    
+    
+    &__nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        position: fixed;
+        z-index: 1000;
+
+        @media (max-width: 778px) {
+            justify-content: space-between !important;
+            width: 100%;
+        }
+
+    }
+
+    &__logo{
+        
+
+        padding: 30px;
+        border-radius: 20px;
+        border: 1px solid #80808031;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        color: rgba(109, 104, 97, 0.555);
+        font-weight: 700;
+        font-size: 20px;
+        cursor: poiter;
+        transition: all ease .3s;
+
+        background: linear-gradient(to right, rgba(35, 35, 35, 0.194), rgba(255, 255, 255, 0.05)); /* градиент слева направо */
+    
+        backdrop-filter: blur(10px);                // блюр заднего фона
+        -webkit-backdrop-filter: blur(10px); 
+               // поддержка для Safari
+
+               @media (max-width: 1000px) {
+                font-size: 16px;
+            }
+
+               @media (max-width: 778px) {
+                padding: 20px;
+            }
+
+    }
+    
+
+    
+
+    &__navigation{
+        list-style-type: none;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        text-transform: uppercase;
+
+
+        padding: 30px;
+        border-radius: 20px;
+        border: 1px solid #80808031;
+
+
+        background: linear-gradient(to right, rgba(35, 35, 35, 0.194), rgba(255, 255, 255, 0.05)); /* градиент слева направо */
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);  // поддержка для Safari
+        
+        &__title{
+            padding: 0;
+            margin: 0;
+
+            color: rgba(109, 104, 97, 0.555);
+            font-weight: 700;
+            font-size: 20px;
+            cursor: pointer;
+            transition: all ease .3s;
+
+            @media (max-width: 1000px) {
+                font-size: 16px;
+            }
+            
+            &:hover{
+                color: rgba(255, 255, 255, 0.788);
+            }
+
+        }
+
+    }
+    
+}
+
+.burger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+
+    cursor: pointer;
+
+    // background: linear-gradient(to right, rgba(35, 35, 35, 0.194), rgba(255, 255, 255, 0.05)); /* градиент слева направо */
+
+
+
+    span {
+        height: 3px;
+        width: 100px;
+        // background: rgba(109, 104, 97, 0.555);
+        background-color: #fff;
+        border-radius: 2px;
+        transition: all 0.3s ease;
+    }
+}
+
+@media (max-width: 776px) {
+
+
+
+    .header__navigation {
+        position: fixed; /* сделаем фиксированным */
+        top:0px; /* прижимаем к верхней части */
+        left: 0px; /* прижимаем к левой части */
+        right: 0px;
+        min-height: 500px;
+        background: rgba(0, 0, 0, 0.9); /* темный фон */
+        flex-direction: column;
+        align-items: center; /* выравниваем по центру */
+        padding: 20px;
+        gap: 15px;
+        border-radius: 0px 0px 40px 40px; /* убираем радиус */
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(-10px);
+        transition: all 0.3s ease;
+
+        border: 1px solid #80808031;
+
+
+        background: linear-gradient(to right, rgba(35, 35, 35, 0.194), rgba(255, 255, 255, 0.05)); /* градиент слева направо */
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px); 
+    }
+
+    .open {
+        opacity: 1;
+        pointer-events: all;
+        transform: translateY(0);
+
+        body{
+            position-visibility: fixed;
+        }
+
+    }
+
+    .burger {
+        position: fixed;
+        right: 23px; /* немного вправо от края */
+        top: 60px; /* немного сверху */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 40px;
+        height: 30px; /* увеличиваем высоту для удобства */
+        z-index: 1000;
+        cursor: pointer;
+        
+
+    }
+
+    .burger span {
+        height: 4px; /* немного увеличиваем толщину линии */
+        width: 100%;
+        background:  rgba(109, 104, 97, 0.555);
+        border-radius: 2px;
+        transition: all 0.3s ease;
+        z-index: 1001;
+    }
+
+    .header__navigation__title {
+        color: #fff;
+        text-align: center;
+        text-transform: none;
+        font-size: 18px;
+    }
+}
+
