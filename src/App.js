@@ -7,6 +7,7 @@ import './components/Style/app.scss'
 import Uslugi from './components/uslugi/uslugi.jsx';
 import Project from './components/Project/project.jsx';
 import Reviwes from './components/reviews/reviews.jsx';
+import Blog from './components/blog/blog.jsx';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
     <Uslugi />
     <Project />
     <Reviwes />
+    <Blog />
 
     </>
 
