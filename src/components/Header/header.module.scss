@@ -1,8 +1,17 @@
 
+.active-link {
+    color: #fff !important;
+  }
 
 .header{
     padding: 40px 0px;
     background: #00000000;
+    transition: padding 0.3s ease;
+
+    &.headerScrolled {
+        padding: 10px 0;
+
+    }
     
     
     &__nav{
@@ -23,7 +32,7 @@
     &__logo{
         
 
-        padding: 30px;
+        padding: 10px;
         border-radius: 20px;
         border: 1px solid #80808031;
         display: flex;
@@ -47,7 +56,19 @@
             }
 
                @media (max-width: 778px) {
-                padding: 20px;
+                padding: 10px;
+            }
+
+            & img {
+
+                @media (max-width: 1000px) {
+                    width: 60px;
+                }
+
+                @media (max-width: 778px) {
+                    width: 50px;
+                }
+
             }
 
     }
@@ -56,6 +77,7 @@
     
 
     &__navigation{
+       
         list-style-type: none;
         
         display: flex;
@@ -75,6 +97,7 @@
         -webkit-backdrop-filter: blur(10px);  // поддержка для Safari
         
         &__title{
+            text-decoration: none !important;
             padding: 0;
             margin: 0;
 

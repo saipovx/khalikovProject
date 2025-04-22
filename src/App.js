@@ -8,6 +8,8 @@ import Uslugi from './components/uslugi/uslugi.jsx';
 import Project from './components/Project/project.jsx';
 import Reviwes from './components/reviews/reviews.jsx';
 import Blog from './components/blog/blog.jsx';
+import Contact from './components/Contact/Contact.jsx';
+import Footer from './components/footer/footer.jsx';
 
 function App() {
 
@@ -22,6 +24,8 @@ function App() {
     <Project />
     <Reviwes />
     <Blog />
+    <Contact />
+    <Footer />
 
     </>
 

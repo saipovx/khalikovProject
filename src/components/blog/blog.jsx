@@ -47,7 +47,7 @@ export default function Blog () {
 
         <>
         
-        <section className={u.section__uslugi}>
+        <section className={u.section__uslugi} id='blog'>
             
             <div className="container">
 

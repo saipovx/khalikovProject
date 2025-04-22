@@ -64,7 +64,7 @@ const projectData = [
 
 export default function Project() {
   return (
-    <section className={u.section__uslugi}>
+    <section className={u.section__uslugi} id='project'>
       <div className="container">
         <p className={u.uslugi__title}>Мои последние проекты</p>
 

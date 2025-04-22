@@ -1,0 +1,46 @@
+
+
+.section__footer{
+    
+    padding: 60px 0px;
+
+}
+
+.footer{
+    max-width: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    &__icons{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        &__link {
+         
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            
+            & img {
+                width: 40px;
+
+            }
+
+        }
+
+    }
+    
+    &__text{
+        color: #e5e5e5;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 22px;
+        text-align: center;
+    }
+}

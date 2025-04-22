@@ -39,7 +39,7 @@ const uslugiData = [
 
 export default function Uslugi() {
   return (
-    <section className={u.section__uslugi}>
+    <section className={u.section__uslugi} id='uslugi' >
       <div className="container">
         <p className={u.uslugi__title}>Чем я могу помочь ?</p>
 

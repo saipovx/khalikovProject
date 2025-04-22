@@ -1,0 +1,151 @@
+
+
+.section__contact{
+    padding: 120px 0px;
+
+    @media (max-width: 778px) {
+        padding: 60px 0px;
+    }
+
+}
+
+.contact{
+    
+    max-width: 100%;
+    width: 100%;
+    padding: 40px 20px;
+    border-radius: 20px;
+    border: 1px solid  rgba(80, 61, 255, 0.674);
+
+    &__title{
+        
+        width: 100%;
+
+        color: #e5e5e5;
+        font-size: 45px;
+        font-weight: 700;
+        line-height: 50px;
+        text-align: center;
+        padding: 5px 0px;
+
+        @media (max-width: 992px) {
+            font-size: 35px;
+            line-height: 40px;
+        }
+
+        @media (max-width: 778px) {
+            font-size: 28px;
+            line-height: 33px;
+
+        }
+
+        @media (max-width: 550px) {
+            font-size: 22px;
+        }
+
+    }
+
+    &__subtitle{
+        width: 100%;
+
+        color: #e5e5e59f;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+        text-align: center;
+
+        @media (max-width: 992px) {
+            font-size: 16px;
+            line-height: 22px;
+        }
+
+        @media (max-width: 550px) {
+            font-size: 15px;
+            line-height: 23px ;
+        }
+
+    }
+
+    &__center{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        padding: 30px 0px;
+
+        @media (max-width: 660px) {
+            flex-direction: column;
+        }
+        
+        &__inp{
+            flex: 0 1 49%;
+
+            background: linear-gradient(to right, rgba(35, 35, 35, 0.194), rgba(255, 255, 255, 0.05)); /* градиент слева направо */
+
+            padding: 15px 20px;
+            border-radius: 15px;
+            border: 1px solid #80808031;
+
+            color: #e5e5e5;
+            font-size: 18px;
+            font-weight: 500;
+            outline: none;
+
+            @media (max-width: 660px) {
+                flex: 0 0 100%;
+                width: 100%;
+            }
+
+        }
+
+        &__text{
+            max-width: 100%;
+            width: 100%;
+            min-height: 200px;
+            background: linear-gradient(to right, rgba(35, 35, 35, 0.194), rgba(255, 255, 255, 0.05)); /* градиент слева направо */
+
+            padding: 15px 20px;
+            border-radius: 15px;
+            border: 1px solid #80808031;
+
+            color: #e5e5e5;
+            font-size: 18px;
+            font-weight: 500;
+            outline: none;
+
+        }
+
+        &__btn{
+            margin-top: 20px !important;
+
+            background: linear-gradient(to right, rgba(35, 35, 35, 0.194), rgba(255, 255, 255, 0.05)); /* градиент слева направо */
+
+
+            padding: 15px 60px;
+            border-radius: 20px;
+            border: 1px solid #80808031;
+
+            color: #e5e5e5;
+            font-size: 18px;
+            font-weight: 500;
+
+            cursor: pointer;
+            transition: all ease .3s;
+
+
+            @media (max-width: 550px) {
+                font-size: 18px;
+                
+            }
+
+            &:hover{
+                background-color: #00000000;
+                border: 1px solid  rgba(80, 61, 255, 0.674);
+            }
+            
+
+        }
+
+    }
+
+}

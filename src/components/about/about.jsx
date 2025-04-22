@@ -10,7 +10,7 @@ export default function About () {
         
         <>
         
-        <section className={a.section__about}>
+        <section className={a.section__about} id='about'>
             
             <div className="container">
 

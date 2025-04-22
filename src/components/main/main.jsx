@@ -6,7 +6,7 @@ import about from '../../images/main/foto.png'
 export default function Main () {
     return (
        
-        <section className={m.section__main}>
+        <section className={m.section__main} id='home'>
             
             <div className="container">
 
