@@ -33,6 +33,11 @@
     }
     
     &__item{
+
+        display: flex;
+        flex-direction: column;
+        // gap: 10px;
+        width: max-content;
         
         &__title{
             color: #e5e5e5;
@@ -97,6 +102,7 @@
             text-transform: uppercase;
             line-height: 40px;
             max-width: 700px;
+ 
 
             @media (max-width: 1200px) {
                 font-size: 32px;
@@ -120,7 +126,8 @@
 
         &__btn{
             margin-top: 20px !important;
-
+            width: max-content;
+            text-decoration: none;
             background: linear-gradient(to right, rgba(35, 35, 35, 0.194), rgba(255, 255, 255, 0.05)); /* градиент слева направо */
 
 

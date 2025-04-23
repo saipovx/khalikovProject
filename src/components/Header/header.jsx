@@ -9,12 +9,10 @@ export default function Header() {
   const [scrolled, setScrolled] = useState(false)
   const [activeSection, setActiveSection] = useState('home')
 
-  // Запрет скролла при открытом меню
   useEffect(() => {
     document.body.classList.toggle('burger-open', menuOpen)
   }, [menuOpen])
 
-  // Отслеживаем прокрутку
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 300)
@@ -25,7 +23,7 @@ export default function Header() {
       for (const id of sections) {
         const section = document.getElementById(id)
         if (section) {
-          const offsetTop = section.offsetTop - 300 // учёт отступа
+          const offsetTop = section.offsetTop - 300
           if (window.scrollY >= offsetTop) {
             current = id
           }
@@ -50,15 +48,15 @@ export default function Header() {
           </div>
 
           <ul className={`${h.header__navigation} ${menuOpen ? h.open : ''}`}>
-            <ScrollLink to="home" className={h.header__navigation__title} activeSection={activeSection}>Главная</ScrollLink>
-            <ScrollLink to="about" className={h.header__navigation__title} activeSection={activeSection}>обо мне</ScrollLink>
-            <ScrollLink to="uslugi" className={h.header__navigation__title} activeSection={activeSection}>Мои услуги</ScrollLink>
-            <ScrollLink to="project" offset={0} className={h.header__navigation__title} activeSection={activeSection}>Проекты</ScrollLink>
-            <ScrollLink to="blog" offset={0} className={h.header__navigation__title} activeSection={activeSection}>Блог</ScrollLink>
-            <ScrollLink to="footer" offset={100} className={h.header__navigation__title} activeSection={activeSection}>Контакты</ScrollLink>
+            <ScrollLink to="home" className={h.header__navigation__title} activeSection={activeSection} onClick={() => setMenuOpen(false)}>Главная</ScrollLink>
+            <ScrollLink to="about" className={h.header__navigation__title} activeSection={activeSection} onClick={() => setMenuOpen(false)}>обо мне</ScrollLink>
+            <ScrollLink to="uslugi" className={h.header__navigation__title} activeSection={activeSection} onClick={() => setMenuOpen(false)}>Мои услуги</ScrollLink>
+            <ScrollLink to="project" offset={0} className={h.header__navigation__title} activeSection={activeSection} onClick={() => setMenuOpen(false)}>Проекты</ScrollLink>
+            <ScrollLink to="blog" offset={0} className={h.header__navigation__title} activeSection={activeSection} onClick={() => setMenuOpen(false)}>Блог</ScrollLink>
+            <ScrollLink to="footer" offset={100} className={h.header__navigation__title} activeSection={activeSection} onClick={() => setMenuOpen(false)}>Контакты</ScrollLink>
           </ul>
 
-          <div className={h.burger} onClick={() => setMenuOpen(prev => !prev)}>
+          <div className={`${h.burger} ${scrolled ? h.burgerScroll : ''}`} onClick={() => setMenuOpen(prev => !prev)}>
             <span />
             <span />
             <span />

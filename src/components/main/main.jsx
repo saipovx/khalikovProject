@@ -1,6 +1,6 @@
 import '../Style/app.scss'
 import m from './main.module.scss'
-
+import ScrollLink from '../../ScrollLink'
 import about from '../../images/main/foto.png'
 
 export default function Main () {
@@ -27,9 +27,9 @@ export default function Main () {
                         </p>
 
 
-                        <button className={m.main__item__btn}>
+                        <ScrollLink to="footer"  className={m.main__item__btn}>
                         Связаться
-                        </button>
+                        </ScrollLink>
 
                     </div>
 

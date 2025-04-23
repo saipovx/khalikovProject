@@ -12,6 +12,7 @@
         padding: 10px 0;
 
     }
+
     
     
     &__nav{
@@ -110,6 +111,11 @@
             @media (max-width: 1000px) {
                 font-size: 16px;
             }
+            .active {
+                color: #ff6347;
+                font-weight: bold;
+              }
+              
             
             &:hover{
                 color: rgba(255, 255, 255, 0.788);
@@ -121,15 +127,26 @@
     
 }
 
+.active {
+    color: #ff6347;
+    font-weight: bold;
+  }
+
 .burger {
     display: none;
     flex-direction: column;
     justify-content: space-between;
-
+    transition: top 0.3s ease;
     cursor: pointer;
 
     // background: linear-gradient(to right, rgba(35, 35, 35, 0.194), rgba(255, 255, 255, 0.05)); /* градиент слева направо */
 
+    &.burgerScroll{
+
+        right: 23px; /* немного вправо от края */
+        top: 30px !important; /* немного сверху */
+        
+    }
 
 
     span {
