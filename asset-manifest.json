@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/khalikovProject.github.io/static/css/main.b4abc964.css",
-    "main.js": "/khalikovProject.github.io/static/js/main.fe7add70.js",
+    "main.js": "/khalikovProject.github.io/static/js/main.3b0a9025.js",
     "reactPlayerPreview.js": "/khalikovProject.github.io/static/js/reactPlayerPreview.3030d4ea.chunk.js",
     "static/media/foto.png": "/khalikovProject.github.io/static/media/foto.0d72240b3357741a731f.png",
     "static/media/aboutUs.png": "/khalikovProject.github.io/static/media/aboutUs.58dff6e0ea020adc13ea.png",
@@ -13,11 +13,11 @@
     "static/media/IMG_9717.JPG": "/khalikovProject.github.io/static/media/IMG_9717.21c1cf1024aa5377c084.JPG",
     "index.html": "/khalikovProject.github.io/index.html",
     "main.b4abc964.css.map": "/khalikovProject.github.io/static/css/main.b4abc964.css.map",
-    "main.fe7add70.js.map": "/khalikovProject.github.io/static/js/main.fe7add70.js.map",
+    "main.3b0a9025.js.map": "/khalikovProject.github.io/static/js/main.3b0a9025.js.map",
     "reactPlayerPreview.3030d4ea.chunk.js.map": "/khalikovProject.github.io/static/js/reactPlayerPreview.3030d4ea.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b4abc964.css",
-    "static/js/main.fe7add70.js"
+    "static/js/main.3b0a9025.js"
   ]
 }
