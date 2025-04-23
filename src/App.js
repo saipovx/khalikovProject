@@ -3,6 +3,8 @@ import Header from './components/Header/header';
 import Main from './components/main/main';
 import About from './components/about/about.jsx';
 
+import { HashRouter } from 'react-router-dom';
+
 import './components/Style/app.scss'
 import Uslugi from './components/uslugi/uslugi.jsx';
 import Project from './components/Project/project.jsx';
@@ -16,6 +18,7 @@ function App() {
   return (
 
     <>
+    
     
     <Header />
     <Main />
