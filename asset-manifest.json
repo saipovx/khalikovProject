@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/khalikovProject.github.io/static/css/main.b4abc964.css",
+    "main.js": "/khalikovProject.github.io/static/js/main.fe7add70.js",
+    "reactPlayerPreview.js": "/khalikovProject.github.io/static/js/reactPlayerPreview.3030d4ea.chunk.js",
+    "static/media/foto.png": "/khalikovProject.github.io/static/media/foto.0d72240b3357741a731f.png",
+    "static/media/aboutUs.png": "/khalikovProject.github.io/static/media/aboutUs.58dff6e0ea020adc13ea.png",
+    "static/media/IMG_9715.JPG": "/khalikovProject.github.io/static/media/IMG_9715.4f9febecc6bee500e633.JPG",
+    "static/media/IMG_9719.JPG": "/khalikovProject.github.io/static/media/IMG_9719.a5372c0fd850b89875f8.JPG",
+    "static/media/IMG_9718.JPG": "/khalikovProject.github.io/static/media/IMG_9718.c5aeecbaedddf15b4b1f.JPG",
+    "static/media/IMG_9716.JPG": "/khalikovProject.github.io/static/media/IMG_9716.17fc51a21e34baa4b98c.JPG",
+    "static/media/IMG_9720.JPG": "/khalikovProject.github.io/static/media/IMG_9720.dbae87f337d24099dd94.JPG",
+    "static/media/IMG_9717.JPG": "/khalikovProject.github.io/static/media/IMG_9717.21c1cf1024aa5377c084.JPG",
+    "index.html": "/khalikovProject.github.io/index.html",
+    "main.b4abc964.css.map": "/khalikovProject.github.io/static/css/main.b4abc964.css.map",
+    "main.fe7add70.js.map": "/khalikovProject.github.io/static/js/main.fe7add70.js.map",
+    "reactPlayerPreview.3030d4ea.chunk.js.map": "/khalikovProject.github.io/static/js/reactPlayerPreview.3030d4ea.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b4abc964.css",
+    "static/js/main.fe7add70.js"
+  ]
+}
